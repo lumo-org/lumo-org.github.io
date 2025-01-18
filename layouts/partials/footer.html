@@ -1,0 +1,10 @@
+{{ with .Site.Copyright }}
+  <span>{{ . }}</span>
+{{ end }}
+{{ if not .Site.Params.hideMadeWithLine }}
+  <span>
+    {{ if .Site.Copyright }}|{{ end }}
+    Maintained by
+    <a href="https://github.com/lumo-org/">LUMO Association</a>
+  </span>
+{{ end }}
