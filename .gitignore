@@ -1,0 +1,9 @@
+.DS_Store
+*.swp
+*~
+.bundle
+vendor
+.vscode/
+node_modules/
+public/
+_stats.html
