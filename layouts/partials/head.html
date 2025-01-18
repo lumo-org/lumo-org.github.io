@@ -1,0 +1,25 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Hugo
+  </title>
+
+  {{ with resources.Get "stylesheets/main.scss" }}
+    {{ $opts := dict "transpiler" "dartsass" "targetPath" "css/style.css" }}
+    {{ with . | toCSS $opts }}
+      {{ if hugo.IsDevelopment }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+      {{ else }}
+        {{ with . | minify | fingerprint }}
+            <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+  {{ end -}}
+</head>

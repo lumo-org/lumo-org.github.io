@@ -1,0 +1,25 @@
+.navbar {
+  background-repeat: repeat-x;
+  height: 75px;
+  color: white;
+  display: block;
+}
+
+.navbar * {
+  height: 70px;
+}
+
+.navbar .container {
+  padding-top: 4px;
+  vertical-align: middle;
+}
+
+.navbar-header {
+  line-height: 70px;
+  font-size: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  display:inline-block;
+  vertical-align: middle;
+  letter-spacing: normal;
+}
