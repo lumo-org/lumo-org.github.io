@@ -14,12 +14,37 @@
   vertical-align: middle;
 }
 
-.navbar-header {
+.navbar .navbar-header {
+  float: left;
   line-height: 70px;
   font-size: 20px;
   margin-left: 0;
   margin-right: 0;
-  display:inline-block;
-  vertical-align: middle;
-  letter-spacing: normal;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  float: right;
+  line-height: 70px;
+  font-size: 15px;
+}
+
+.navbar .navbar-nav li {
+  color: #FFF;
+  font-weight: 700;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+}
+
+.navbar .navbar-nav li a {
+  color: #FFF;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar .navbar-nav li a:hover {
+  text-decoration: underline;
 }
