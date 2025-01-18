@@ -1,0 +1,9 @@
+<header class="header-panel">
+  <div class="container">
+    {{ if $.IsHome }}
+      Welcome to LUMO site! For more information, you can click <a href="https://github.com/lumo-org/">this</a> for details.
+    {{ else }}
+      Publish Date: {{ $.PublishDate }}
+    {{ end }}
+  </div>
+</header>
