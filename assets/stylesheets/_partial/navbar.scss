@@ -38,6 +38,11 @@
   }
 }
 
+.navbar-brand {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navbar .navbar-collapse {
   border-color: #E7E7E7;
   margin-left: -15px;
@@ -54,6 +59,10 @@
 .navbar .navbar-nav {
   margin: 0;
   padding: 0;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  line-height: 50px;
   @media (max-width: 767px) {
     width: 100%;
     height: auto;
@@ -61,12 +70,6 @@
     display: block;
     position: absolute;
     margin-top: 50px;
-  }
-  @media (min-width: 768px) {
-    float: left;
-    display: flex;
-    flex-direction: row;
-    line-height: 50px;
   }
 }
 
@@ -113,7 +116,6 @@
   margin-right: 15px;
   margin-bottom: 8px;
   background-color: transparent;
-  background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
 }
@@ -122,22 +124,8 @@
   background-color: #DDD;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
-}
-
-.navbar .navbar-toggle .icon-bar {
-  background-color: #888;
-}
-
 .navbar-toggle .icon-bar {
+  background-color: #888;
   display: block;
   margin-bottom: 4px;
   width: 22px;

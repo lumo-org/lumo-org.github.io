@@ -1,7 +1,3 @@
-.content {
-  background-color: #FFF;
-}
-
 .container {
   width: auto;
   max-width: 1050px;
@@ -13,4 +9,8 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.content {
+  min-height: calc(100vh - 150px);
 }

@@ -9,14 +9,12 @@
 
     <!-- {{- partial "header.html" . -}} -->
 
-    <div class="content">
-      <div class="container">
-        <main>
-          {{ block "main" . }}{{ end }}
-        </main>
-      </div>
+    <div class="container content">
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+      <div class="pusher"></div>
     </div>
-
     {{- partial "footer.html" . -}}
     
   </body>
