@@ -1,7 +1,7 @@
 {{ define "main" }}
-  <h2>Blog</h2>
-  <a href="archives/">Archives</a>
+  <h2>Archives</h2>
   {{ range (.Site.RegularPages.GroupByDate "2006") }}
+  <h3>{{ .Key }}</h3>
   <ul class="archive-list">
     {{ range (where .Pages "Type" "posts") }}
     <li>
