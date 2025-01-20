@@ -9,14 +9,21 @@ html {
   font-family: sans-serif;
 }
 
-body {
-  background-color: #EEE;
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  font-size: 12px;
-  line-height: 1.67;
-  color: #363636;
+  margin-bottom: 90px;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #FFF;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
 }
 
 body {
@@ -28,27 +35,27 @@ body {
 // Font size.
 
 h1 {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 30px;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 24px;
 }
 
 h4 {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 h5 {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 h6 {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 // Margin.
@@ -68,10 +75,6 @@ h4, h5, h6 {
 }
 
 // Misc.
-
-h1, h2 {
-  font-weight: 300 !important;
-}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
