@@ -70,6 +70,14 @@
   }
 }
 
+.navbar .navbar-right {
+  float: right;
+  @media (max-width: 767px) {
+    margin-top: 200px;
+    border-top: 1px solid #DDD;
+  }
+}
+
 .navbar .navbar-nav li {
   color: #777;
   padding: 15px;
