@@ -4,14 +4,14 @@
       <a class="navbar-brand">
         LUMO Org
       </a>
-      <button type="button" class="navbar-toggle collapsed">
+      <button type="button" class="navbar-toggle collapsed" id="navbarToggle">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
     </div>
-    <div class="navbar-collapse collapse" id="navbar">
+    <div class="navbar-collapse hidden" id="navbar">
       <ul class="navbar-nav">
         <li>
           <a href="/">Home</a>
@@ -23,4 +23,11 @@
       </ul>
     </div>
   </div>
+  <script>
+    var navbarToggle = document.getElementById("navbarToggle");
+    var navbar = document.getElementById("navbar");
+    navbarToggle.addEventListener("click", function() {
+        navbar.classList.toggle("hidden");
+    });
+  </script>
 </nav>

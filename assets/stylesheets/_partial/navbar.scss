@@ -39,7 +39,6 @@
 }
 
 .navbar .navbar-collapse {
-  display: none;
   border-color: #E7E7E7;
   margin-left: -15px;
   margin-right: -15px;
@@ -52,14 +51,23 @@
   }
 }
 
-
 .navbar .navbar-nav {
-  display: flex;
-  flex-direction: row;
   margin: 0;
   padding: 0;
-  float: left;
-  line-height: 50px;
+  @media (max-width: 767px) {
+    width: 100%;
+    height: auto;
+    background-color: #F8F8F8;
+    display: block;
+    position: absolute;
+    margin-top: 50px;
+  }
+  @media (min-width: 768px) {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    line-height: 50px;
+  }
 }
 
 .navbar .navbar-nav li {
