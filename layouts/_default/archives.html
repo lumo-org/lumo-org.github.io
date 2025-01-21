@@ -1,5 +1,4 @@
 {{ define "main" }}
-  <h2>Archives</h2>
   {{ range (.Site.RegularPages.GroupByDate "2006") }}
   <h3>{{ .Key }}</h3>
   <ul class="archive-list">

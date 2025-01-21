@@ -1,3 +1,12 @@
 {{ define "main" }}
-  {{ .Content }}
+  <h2># 线上功能</h2>
+    Work In Progress
+  <h2># 最新文章</h2>
+  {{ range first 5 (where .Site.RegularPages.ByDate.Reverse "Type" "posts") }}
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ .PublishDate.Format "Jan 2, 2006." }} | By: {{ .Params.author }}</p>
+    {{ .Summary }}
+    <hr>
+  {{ end }}
+  <a href="posts/">阅读更多 -></a>
 {{ end }}

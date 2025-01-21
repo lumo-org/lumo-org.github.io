@@ -1,6 +1,6 @@
 {{ define "main" }}
   <a href="archives/">Archives</a> | <a href="/index.xml">RSS</a>
-  {{ range where .Pages.ByDate.Reverse "Type" "posts" }}
+  {{ range where .Site.RegularPages.ByDate.Reverse "Type" "posts" }}
     <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
     <p>{{ .PublishDate.Format "Jan 2, 2006." }} | By: {{ .Params.author }}</p>
     {{ .Summary }}
