@@ -1,4 +1,7 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
+  <p>{{ .PublishDate.Format "Jan 2, 2006." }} | By: {{ .Params.author }}</p>
   {{ .Content }}
+  <hr />
+  <p>Category: {{ .Params.category }} | Tag: {{ .Params.tag }}<p>
 {{ end }}
