@@ -1,3 +1,7 @@
 [build]
   useResourceCacheWhen = "fallback"
 
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"

@@ -1,15 +1,9 @@
 {{ define "main" }}
-  <h2>Blog</h2>
-  <a href="archives/">Archives</a>
-  {{ range (.Site.RegularPages.GroupByDate "2006") }}
-  <ul class="archive-list">
-    {{ range (where .Pages "Type" "posts") }}
-    <li>
-      {{ .PublishDate.Format "2006-01-02" }}
-      ->
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </li>
-    {{ end }}
-  </ul>
+  <a href="archives/">Archives</a> | <a href="/index.xml">RSS</a>
+  {{ range where .Pages.ByDate.Reverse "Type" "posts" }}
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ .PublishDate.Format "Jan 2, 2006." }} | By: {{ .Params.author }}</p>
+    {{ .Summary }}
+    <hr>
   {{ end }}
 {{ end }}
