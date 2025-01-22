@@ -5,3 +5,8 @@
   category = "categories"
   tag = "tags"
   author = "authors"
+
+[pagination]
+  disableAliases = false
+  pagerSize = 3
+  path = 'posts'

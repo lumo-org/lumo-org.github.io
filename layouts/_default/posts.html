@@ -1,6 +1,10 @@
 {{ define "main" }}
   <a href="archives/">Archives</a> | <a href="/index.xml">RSS</a>
-  {{ range where .Site.RegularPages.ByDate.Reverse "Type" "posts" }}
+
+  {{ $pages := where .Site.RegularPages.ByDate.Reverse "Type" "posts" }}
+  {{ $paginator := .Paginate ($pages) }}
+
+  {{ range $paginator.Pages }}
     <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
     <p>{{ .PublishDate.Format "Jan 2, 2006." }} | By: {{ .Params.author }}</p>
     {{ .Summary }}
@@ -8,4 +12,7 @@
     <a href="{{ .RelPermalink }}">↪ 阅读更多</a>
     <hr />
   {{ end }}
+
+  {{ template "_internal/pagination.html" . }}
+
 {{ end }}
