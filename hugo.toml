@@ -9,4 +9,4 @@
 [pagination]
   disableAliases = false
   pagerSize = 3
-  path = 'posts'
+  path = 'pages'
