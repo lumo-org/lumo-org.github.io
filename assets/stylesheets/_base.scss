@@ -88,6 +88,22 @@ h1, h2, h3, h4, h5, h6 {
   color: inherit;
 }
 
+/* a */
+a {
+  color: #337AB7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* img */
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
 .hidden {
   display: none;
 }

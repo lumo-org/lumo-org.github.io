@@ -4,6 +4,8 @@
     <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
     <p>{{ .PublishDate.Format "Jan 2, 2006." }} | By: {{ .Params.author }}</p>
     {{ .Summary }}
+    ... <br \>
+    <a href="{{ .RelPermalink }}">↪ 阅读更多</a>
     <hr />
   {{ end }}
 {{ end }}
