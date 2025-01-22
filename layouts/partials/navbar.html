@@ -1,7 +1,10 @@
 <nav class="navbar">
   <div class="container">
     <div class="navbar-header">
-      <a href="/" class="navbar-brand">LUMO Org</a>
+      <a href="/" class="navbar-brand">
+        <img width="21" height="21" alt="lumo-logo" src="/images/lumo-logo.svg">
+        LUMO Org
+      </a>
       <button type="button" class="navbar-toggle collapsed" id="navbarToggle">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -19,11 +22,16 @@
       </ul>
     </div>
   </div>
-  <script>
-    var navbarToggle = document.getElementById("navbarToggle");
-    var navbar = document.getElementById("navbar");
-    navbarToggle.addEventListener("click", function() {
-        navbar.classList.toggle("hidden");
-    });
-  </script>
+  {{ with resources.Get "javascripts/navbar-collapse.js" }}
+    {{ if hugo.IsDevelopment }}
+      {{ with . | js.Build }}
+        <script src="{{ .RelPermalink }}"></script>
+      {{ end }}
+    {{ else }}
+      {{ $opts := dict "minify" true }}
+        {{ with . | js.Build $opts | fingerprint }}
+          <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+        {{ end }}
+    {{ end }}
+  {{ end }}
 </nav>

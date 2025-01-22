@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1" /><g
+     id="layer1"
+     transform="matrix(1.1837201,0,0,1.1837201,-16.780755,-16.812137)"><path
+       d="m 89.766581,22.776969 c -21.976777,0 -39.751276,17.774499 -39.751276,39.751275 0,13.515432 6.757716,25.384032 17.036261,32.596048 v 12.833978 c 0,3.12331 2.555439,5.67876 5.678754,5.67876 h 34.07252 c 3.12332,0 5.67876,-2.55545 5.67876,-5.67876 V 95.124292 c 10.27854,-7.212016 17.03626,-19.080616 17.03626,-32.596048 0,-21.976776 -17.7745,-39.751275 -39.751279,-39.751275 M 101.12409,88.536936 V 102.27952 H 95.445338 V 76.214039 l 9.710662,-9.65388 c 2.21472,-2.214714 2.21472,-5.849115 0,-8.06383 -2.21471,-2.214715 -5.84911,-2.214715 -8.063825,0 l -7.325594,7.38238 -7.325593,-7.38238 c -2.214713,-2.214715 -5.849115,-2.214715 -8.06383,0 -2.214713,2.214715 -2.214713,5.849116 0,8.06383 l 9.71067,9.65388 V 102.27952 H 78.409073 V 88.536936 c -10.051394,-4.37264 -17.03626,-14.367249 -17.03626,-26.008692 0,-15.673361 12.720407,-28.393768 28.393768,-28.393768 15.673359,0 28.393769,12.720407 28.393769,28.393768 0,11.641443 -6.98487,21.636052 -17.03626,26.008692 M 72.73032,124.99454 h 34.07252 v 5.67875 c 0,3.12332 -2.55544,5.67876 -5.67875,5.67876 H 78.409073 c -3.123313,0 -5.678753,-2.55544 -5.678753,-5.67876 z"
+       id="path1"
+       style="fill:#ffc107;fill-opacity:1;stroke-width:5.679;stroke-dasharray:none" /><rect
+       style="fill:#263238;fill-opacity:1;stroke-width:7.24747"
+       id="rect1"
+       width="80.575562"
+       height="29.300201"
+       x="49.950829"
+       y="116.28482" /><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:34.0317px;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:7.24747;stroke-dasharray:none"
+       x="48.778816"
+       y="142.61568"
+       id="text3"><tspan
+         id="tspan3"
+         x="48.778816"
+         y="142.61568"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:34.0317px;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Bold';fill:#ffffff;fill-opacity:1;stroke-width:7.24747">LUMO</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.2095px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#607d8b;fill-opacity:1;stroke-width:7.24747;stroke-dasharray:none"
+       x="56.379398"
+       y="157.59814"
+       id="text4"><tspan
+         id="tspan4"
+         x="56.379398"
+         y="157.59814"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.2095px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';fill:#607d8b;fill-opacity:1;stroke-width:7.24747">Association</tspan></text></g></svg>
