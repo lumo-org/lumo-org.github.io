@@ -112,6 +112,12 @@ hr {
   border-top: 1px solid;
 }
 
+/* pre, code */
+pre, code {
+  font-family: monospace;
+  background-color: #E0E0E0;
+}
+
 .hidden {
   display: none;
 }
