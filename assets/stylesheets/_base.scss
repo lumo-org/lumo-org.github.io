@@ -20,10 +20,10 @@ body {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #FFF;
+  background-color: #FFFFFF;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
+  color: #212121;
 }
 
 body {
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* a */
 a {
-  color: #337AB7;
+  color: #0277BD;
   text-decoration: none;
 }
 
@@ -102,6 +102,14 @@ a:hover {
 img {
   vertical-align: middle;
   border: 0;
+}
+
+/* hr */
+hr {
+  margin: 15px 0;
+  color: #BDBDBD;
+  border: 0;
+  border-top: 1px solid;
 }
 
 .hidden {

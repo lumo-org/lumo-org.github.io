@@ -1,8 +1,12 @@
+$borderColor: #E0E0E0;
+$backgroundColor: #F5F5F5;
+$foregroundColor: #757575;
+
 .navbar {
   display: block;
   position: sticky;
-  background-color: #F8F8F8;
-  border-bottom: 1px solid #E7E7E7;
+  background-color: $backgroundColor;
+  border-bottom: 1px solid $borderColor;
   height: 50px;
   top: 0;
 }
@@ -33,7 +37,7 @@
 
 .navbar-header .navbar-brand {
   padding: 15px;
-  color: #777;
+  color: $foregroundColor;
   float: left;
   height: 50px;
   line-height: 20px;
@@ -49,7 +53,7 @@
 }
 
 .navbar .navbar-collapse {
-  border-color: #E7E7E7;
+  border-color: $borderColor;
   margin-left: -15px;
   margin-right: -15px;
   @media (min-width: 768px) {
@@ -71,7 +75,7 @@
   @media (max-width: 767px) {
     width: 100%;
     height: auto;
-    background-color: #F8F8F8;
+    background-color: $backgroundColor;
     display: block;
     position: absolute;
     margin-top: 50px;
@@ -82,30 +86,30 @@
   float: right;
   @media (max-width: 767px) {
     margin-top: 200px;
-    border-top: 1px solid #DDD;
+    border-top: 1px solid $borderColor;
   }
 }
 
 .navbar .navbar-nav li {
-  color: #777;
+  color: $foregroundColor;
   padding: 15px;
   line-height: 20px;
   list-style: none;
 }
 
 .navbar .navbar-nav li a {
-  color: #777;
+  color: $foregroundColor;
   text-decoration: none;
   background-color: transparent;
 }
 
 .navbar .navbar-nav li a:hover {
-  color: #333;
+  color: #212121;
 }
 
 .navbar-header .navbar-toggle {
   float: right;
-  border-color: #DDD;
+  border-color: $borderColor;
   @media (min-width: 768px) {
     display: none;
   }
@@ -126,11 +130,11 @@
 }
 
 .navbar-toggle:hover {
-  background-color: #DDD;
+  background-color: $borderColor;
 }
 
 .navbar-toggle .icon-bar {
-  background-color: #888;
+  background-color: #9E9E9E;
   display: block;
   margin-bottom: 4px;
   width: 22px;
