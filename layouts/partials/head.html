@@ -29,4 +29,10 @@
   {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
   {{ end -}}
+
+  <!-- Mathjax loader. -->
+  {{ if .Param "math" }}
+    {{ partialCached "mathjax.html" . }}
+  {{ end }}
+
 </head>

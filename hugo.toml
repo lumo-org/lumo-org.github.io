@@ -10,3 +10,16 @@
   disableAliases = false
   pagerSize = 3
   path = 'pages'
+
+# Math support.
+
+[markup.goldmark.extensions.passthrough]
+  enable = true
+
+[markup.goldmark.extensions.passthrough.delimiters]
+  block = [['\[', '\]'], ['$$', '$$']]
+  inline = [['\(', '\)']]
+
+[params]
+  math = true
+

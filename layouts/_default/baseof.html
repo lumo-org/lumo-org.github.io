@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="zh-Hans">
-  {{- partial "head.html" . -}}
+  {{- partialCached "head.html" . -}}
   <body>
-    {{- partial "navbar.html" . -}}
+    {{- partialCached "navbar.html" . -}}
 
     <div class="container content">
       <main>
@@ -10,7 +10,7 @@
       </main>
       <div class="pusher"></div>
     </div>
-    {{- partial "footer.html" . -}}
+    {{- partialCached "footer.html" . -}}
     
   </body>
 </html>
