@@ -6,7 +6,9 @@ tag: "Math"
 category: "Study"
 ---
 
-$$\frac{2}{\frac{1}{a}+\frac{1}{b}} \le \sqrt{ab} \le \frac{a+b}{2} \le \sqrt{\frac{a^2+b^2}{2}}$$
+$$
+\frac{2}{\frac{1}{a}+\frac{1}{b}} \le \sqrt{ab} \le \frac{a+b}{2} \le \sqrt{\frac{a^2+b^2}{2}}
+$$
 
 # ${ \mathrm{Example\enspace 1}} $
 
